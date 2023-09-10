@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body{
+  overflow-x: hidden;
+}
+.intro {
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  padding-left: 15%;
+  padding-bottom: 0.5%;
+  padding-top: 5%;
+  width: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.know{
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  padding-left: 15%;
+  padding-bottom: 0.5%;
+  padding-top: 5%;
+  width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.built {
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  padding-left: 15%;
+  padding-bottom: 0.5%;
+  padding-top: 5%;
+  width: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.def{
+  font-family: "Morganite Black";
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+  padding-left: 15%;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+.skills{
+  font-family: "Morganite Black";
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+  padding-left: 15%;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+.projects{
+  font-family: "Morganite Black";
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+  padding-left: 15%;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+
+.contact{
+  font-family: "Morganite Black";
+  letter-spacing: 0.1em;
+  font-size: 3rem;
+  padding-left: 15%;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+
+
+.getintouch{
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  padding-left: 15%;
+  padding-bottom: 0.5%;
+  padding-top: 5%;
+  width: 50%;
+}
+
+
+
+/* navbar css */
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.429);
+  color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links li {
+  font-size: 18px;
+}
+
+.nav-links a {
+  padding: 3px;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* navbar css ends */
+
+
+.carousel-img{
+  background: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aja{
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border-radius: 5rem;
+}
+
+.topnav{
+  color: wheat;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background: white;
+}
+
+.activetab{
+  background: rgb(255, 141, 141);
+}
+
+.nav-transparent
+{
+  background: black;
+  
 }
