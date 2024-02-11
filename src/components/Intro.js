@@ -6,7 +6,7 @@ const Intro = () => {
 
   return (
     <div className=" h-full pb-0 flex flex-col justify-center items-center ">
-    
+  
     </div>
   );
 };

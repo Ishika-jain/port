@@ -1,5 +1,13 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+@import '~font-awesome/css/font-awesome.min.css';
+
+.App{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   overflow-x: hidden;
 }
@@ -90,22 +98,7 @@ body{
 
 /* navbar css */
 
-.navbar {
-  background-color: rgba(0, 0, 0, 0.429);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  z-index: 10000;
-}
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
 
 .nav-links {
   list-style: none;
@@ -154,7 +147,7 @@ body{
 }
 
 .activetab{
-  background: rgb(255, 141, 141);
+  background: rgba(188, 183, 183, 0.61);
 }
 
 .nav-transparent
@@ -162,3 +155,62 @@ body{
   background: black;
   
 }
+
+
+/* Update your existing CSS styles */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .intro, .def {
+    font-size: 2rem;
+    padding-left: 5%;
+  }
+  
+  /* Add more responsive styles as needed */
+}
+
+
+
+
+
+
+
+/* contact form css */
+
+.contact-container {
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.social-icons {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #333;
+}
+
+.icons a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+

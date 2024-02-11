@@ -8,7 +8,7 @@ const Projects = ({ data }) => {
   const [projectCategory, setProjectCategory] = useState(0);
 
   return (
-    <div className="h-screen bg-red-100">
+    <div className="h-full" id="projects">
       <div className="flex flex-col w-full">
         <div>
           <SlideIn text="WHAT HAVE I BUILT?" className="built" />
@@ -16,10 +16,10 @@ const Projects = ({ data }) => {
         </div>
         <CompSlideIn>
           <div>
-            <div className="flex flex-col w-screen justify-center items-center">
-              <div className="flex w-3/4  mb-10 justify-evenly rounded-full object-contain items-center overflow-hidden ">
+            <div className="flex flex-col w-full justify-center items-center ">
+              <div className="xs:flex-col md:flex w-3/4  mb-10 justify-evenly rounded-full object-contain items-center overflow-hidden ">
                 <button
-                  className={` p-3 text-xl w-full bg-red-300  border-r border-black ${
+                  className={` p-3 text-xl w-full  border-r border-black ${
                     projectCategory === 0 ? "activetab" : ""
                   }`}
                   onClick={() => setProjectCategory(0)}
@@ -27,7 +27,7 @@ const Projects = ({ data }) => {
                   Frontend
                 </button>
                 <button
-                  className={` p-3 text-xl w-full bg-red-300 border-r border-black  ${
+                  className={` p-3 text-xl w-full  border-r border-black  ${
                     projectCategory === 1 ? "activetab" : ""
                   }`}
                   onClick={() => setProjectCategory(1)}
@@ -35,7 +35,7 @@ const Projects = ({ data }) => {
                   Backend
                 </button>
                 <button
-                  className={` p-3 text-xl w-full bg-red-300 border-r border-black  ${
+                  className={` p-3 text-xl w-full  border-r border-black  ${
                     projectCategory === 2 ? "activetab" : ""
                   }`}
                   onClick={() => setProjectCategory(2)}
@@ -43,10 +43,11 @@ const Projects = ({ data }) => {
                   Full Stack
                 </button>
               </div>
-              <div className="flex ">
+              <div className=" p-4 flex w-full flex-wrap justify-center items-center">
                 {data[projectCategory].map((item) => (
-                  <div key={item.id}>
+                  <div key={item.id} className="justify-center p-4">
                     <Card item={item}></Card>
+                    
                   </div>
                 ))}
               </div>

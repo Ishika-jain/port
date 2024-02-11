@@ -6,10 +6,10 @@ import ish from "../assets/ish.jpg";
 
 const Aboutme = () => {
   return (
-    <div className="h-full bg-red-100">
+    <div className="h-full " id="about">
       <div className="flex flex-col w-full">
         <div>
-          <SlideIn text="INTRODUCTION" className="intro" />
+          <SlideIn text="WHO AM I?" className="intro" />
           <SlideIn text="ABOUT ME" className="def" />
         </div>
           <CompSlideIn>

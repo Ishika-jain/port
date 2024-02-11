@@ -1,17 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import css from "../assets/css.png";
-import github from "../assets/github-6c15ddce.png";
-import html from "../assets/html-92b76a73.png";
-import react from "../assets/reactjs-966214a8.png";
-import java from "../assets/java-714321be.png";
-import node from "../assets/node-622212f5.webp";
 import Intro from "./Intro";
 
 const ParallaxContainer = () => {
   const containerRef = useRef(null);
-
- 
 
   useEffect(() => {
     const container = containerRef.current;
@@ -44,12 +36,9 @@ const ParallaxContainer = () => {
   return (
     <div
       ref={containerRef}
-      className="relative h-screen p-30 w-full overflow-hidden bg-red-100"
+      className=" h-screen p-30 w-full overflow-hidden flex justify-start items-center ml-96 pl-72"
     >
-      <div className="bg-green-400">
-        <div className="block w-10 skill absolute top-0 left-30">Ishika</div>
-        <div className="block w-10 skill absolute bottom-0 left-30">Ishika</div>
-      </div>
+      <div className="skill text-9xl">Ishika</div>
 
       <Intro />
     </div>
