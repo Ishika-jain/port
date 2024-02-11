@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const CompSlideIn = ({ children }) => {
   useEffect(() => {
     const screenWidth = window.innerWidth;
-    const minScreenWidthForAnimation = 768;
+    const minScreenWidthForAnimation = 500;
     if (screenWidth >= minScreenWidthForAnimation) {
       const elements = document.querySelectorAll(".comp-slide-in");
 

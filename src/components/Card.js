@@ -9,9 +9,9 @@ const Card = ({ item }) => {
   };
 
   return (
-    <div className="flex flex-col w-96 h-72 ">
+    <div className="flex flex-col w-32 md:w-96 h-72 ">
       <div
-        className={`max-w-md rounded overflow-hidden shadow-lg h-fit bg-white transition-transform transform ${
+        className={`max-w-md rounded overflow-hidden shadow-lg h-fit bg-yellow-100 transition-transform transform ${
           showButtons ? "scale-105 " : ""
         }`}
         onMouseEnter={toggleButtons}
@@ -40,7 +40,7 @@ const Card = ({ item }) => {
             </a>
             <a
               href="https://www.youtube.com"
-              className="p-2 bg-red-500 text-white"
+              className="p-2 bg-yellow-500 text-white"
             >
               YouTube
             </a>

@@ -19,46 +19,46 @@ const skills = [
     icon: <i className="fab fa-react"></i>,
   },
   {
-    title: "JavaScript",
+    title: "jsdsf",
     icon: <i className="fab fa-js"></i>,
   },
   {
-    title: "React",
+    title: "asfsf",
     icon: <i className="fab fa-react"></i>,
   },
   {
-    title: "JavaScript",
+    title: "JavaScrthrtjhript",
     icon: <i className="fab fa-js"></i>,
   },
   {
-    title: "React",
+    title: "Reacryr5yt",
     icon: <i className="fab fa-react"></i>,
   },
   {
-    title: "JavaScript",
+    title: "Javaeryy5y5Script",
     icon: <i className="fab fa-js"></i>,
   },
   {
-    title: "React",
+    title: "Re45et45act",
     icon: <i className="fab fa-react"></i>,
   },
   {
-    title: "JavaScript",
+    title: "JavaScrerthreipt",
     icon: <i className="fab fa-js"></i>,
   },
   {
-    title: "React",
+    title: "Reaergthct",
     icon: <i className="fab fa-react"></i>,
   },
   {
-    title: "JavaScript",
+    title: "JaverftghaScript",
     icon: <i className="fab fa-js"></i>,
   },
 ];
 
 const Skills = () => {
   return (
-    <div className="h-full">
+    <div className="h-full pb-32">
       <div className="flex flex-col">
         <div>
           <SlideIn text="WHAT DO I KNOW?" className="know" />
@@ -66,7 +66,7 @@ const Skills = () => {
         </div>
         <div className="">
           <CompSlideIn>
-          <div className="flex w-full  flex-wrap justify-center items-center">
+          <div className="flex w-full flex-wrap justify-center items-center">
                 {skills.map((skill, index) => (
                   <SkillCard key={index} {...skill} />
                 ))}

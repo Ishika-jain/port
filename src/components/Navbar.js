@@ -22,16 +22,18 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`z-50 fixed flex flex-col left-0 h-full text-xl font-semibold justify-around w-32 text-white ${
-        isScrolled ? "text-black bg-white border-r-2" : "text-white"
+      className={`z-50 fixed flex flex-col left-0 h-full text-xl font-semibold justify-around w-12 md:w-32 text-white ${
+        isScrolled ? "text-black bg-blue-50 border-r-2" : " hidden"
       }`}
     >
       <div
-        className={`text-center ${isScrolled ? "text-black " : "text-white"}`}
+        className={`text-center text-sm md:text-lg ${
+          isScrolled ? "text-black " : "text-white"
+        }`}
       >
         Lgogo
       </div>
-      <ul className="flex flex-col w-full items-center justify-around text-3xl pl-0 h-3/6">
+      <ul className="flex flex-col w-full items-center justify-around text-xl md:text-3xl pl-0 h-3/6">
         <li>
           <a href="/" className="hover:bg-red-400 no-underline">
             <i
@@ -79,9 +81,11 @@ const Navbar = () => {
         </li>
       </ul>
       <div
-        className={`-rotate-90 text-center ${isScrolled ? "text-black " : "text-white"}`}
+        className={`-rotate-90 flex text-center text-sm md:text-lg pl-8 ${
+          isScrolled ? "text-black " : "text-white"
+        }`}
       >
-        2023 - 2024.{" "}
+        <p>2023</p> <p>-</p> <p className="">2024</p>
       </div>
     </nav>
   );

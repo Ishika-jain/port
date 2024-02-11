@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: 0px;
 }
 
 body{
@@ -45,7 +46,7 @@ body{
 }
 
 .def{
-  font-family: "Morganite Black";
+  font-family: "Patrick Hand";
   letter-spacing: 0.1em;
   font-size: 3rem;
   padding-left: 15%;
@@ -54,7 +55,7 @@ body{
 }
 
 .skills{
-  font-family: "Morganite Black";
+  font-family: "Patrick Hand";
   letter-spacing: 0.1em;
   font-size: 3rem;
   padding-left: 15%;
@@ -63,7 +64,7 @@ body{
 }
 
 .projects{
-  font-family: "Morganite Black";
+  font-family: "Patrick Hand";
   letter-spacing: 0.1em;
   font-size: 3rem;
   padding-left: 15%;
@@ -73,7 +74,7 @@ body{
 
 
 .contact{
-  font-family: "Morganite Black";
+  font-family: "Patrick Hand";
   letter-spacing: 0.1em;
   font-size: 3rem;
   padding-left: 15%;
